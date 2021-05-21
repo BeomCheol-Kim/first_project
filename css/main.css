@@ -1,85 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', serif; /*serif: 바탕체*/
-    display: flex;
-    flex-flow: column nowrap;/*메인축을 clumn으로 설정, nowrap: flex-wrap의 기본값*/
-    justify-content: center;/*메인축을 기준으로 정렬 설정*/
-    align-items: center;/*메인축의 수직축 기준으로 정렬 설정*/
-    overflow-x: hidden;/*요소의 박스에 내용이 더길때 어떻게 보일지 선택*/
+    font-family: 'Roboto', serif;
 }
 
-h1{
-    margin: 2em 0 1.5em 0;
-}
-
-nav{
-    width: 100%;
+#container{
+    height:250px;
     display: flex;
     justify-content: center;
-    position: relative;
-    background: linear-gradient(90deg, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    align-items: center;
 }
 
-ul, li{
-    margin:0;
-    padding: 0;
-    list-style: none;
+#NameOne{
+    color: black;
+    opacity: 50%;
+    font-family: 'Nanum Pen Script', 'Roboto', serif;
+    font-size: 5em;
+    text-decoration-line : none;
+    text-decoration-color: none;
 }
 
-/* #main-menu,
-#sub-menu{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-} */
-
-#main-menu > li{
-    float: left;
-    position: relative;
+#NameTwo{
+    color: black;
+    font-family: 'Nanum Pen Script', 'Roboto', serif;
+    font-size: 5em;
+    text-decoration-line : none;
+    text-decoration-color: none;
 }
 
-#main-menu > li > a{
-    font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.85);
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 0.05em;
-    display: block;/*요소 앞뒤로 줄바꿈 됨*/
-    padding: 14px 36px;
-    border-right: 1px solid rgba(0,0,0,0.15);
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-}
-
-#main-menu > li:nth-child(1) > a{
-    border-left: 1px solid rgba(0,0,0,0.15);
-}
-
-#sub-menu{
-    position: absolute;
-    background: #182952;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.15s ease-in;/*펼쳐지는 시간 설정*/
-}
-
-#sub-menu > li{
-    padding: 16px 28px;
-    border-bottom: 1px solid rgba(0,0,0,0.15);
-}
-
-#sub-menu > li > a{
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-}
-
-#main-menu > li:hover #sub-menu{
-    opacity: 1;
-    visibility: visible;
-}
-
-#sub-menu > li > a:hover{
-    text-decoration: underline;
+#NameThree{
+    color: black;
+    font-family: 'Nanum Pen Script', 'Roboto', serif;
+    font-size: 5em;
+    text-decoration-line : none;
+    text-decoration-color: none;
 }
