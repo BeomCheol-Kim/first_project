@@ -5,22 +5,40 @@ body{
     padding: 0;
     font-family: 'Roboto', serif; /*serif: 바탕체*/
     display: flex;
-    /* flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden */
+    flex-flow: column nowrap;/*메인축을 clumn으로 설정, nowrap: flex-wrap의 기본값*/
+    justify-content: center;/*메인축을 기준으로 정렬 설정*/
+    align-items: center;/*메인축의 수직축 기준으로 정렬 설정*/
+    overflow-x: hidden;/*요소의 박스에 내용이 더길때 어떻게 보일지 선택*/
 }
 
-#main-menu,
+h1{
+    margin: 2em 0 1.5em 0;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(90deg, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+ul, li{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+/* #main-menu,
 #sub-menu{
     margin: 0;
     padding: 0;
     list-style-type: none;
-}
+} */
 
 #main-menu > li{
     float: left;
-    background: #35477d;
+    position: relative;
 }
 
 #main-menu > li > a{
@@ -30,7 +48,7 @@ body{
     text-decoration: none;
     letter-spacing: 0.05em;
     display: block;/*요소 앞뒤로 줄바꿈 됨*/
-    padding: 12px 16px;
+    padding: 14px 36px;
     border-right: 1px solid rgba(0,0,0,0.15);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
@@ -44,6 +62,7 @@ body{
     background: #182952;
     opacity: 0;
     visibility: hidden;
+    transition: all 0.15s ease-in;/*펼쳐지는 시간 설정*/
 }
 
 #sub-menu > li{
@@ -59,4 +78,8 @@ body{
 #main-menu > li:hover #sub-menu{
     opacity: 1;
     visibility: visible;
+}
+
+#sub-menu > li > a:hover{
+    text-decoration: underline;
 }

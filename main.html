@@ -6,19 +6,31 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <h3>Pure css drop down menu</h3>
-        <ul id="main-menu">
-            <li><a href="#">MENU1</a></li>
-            <li><a href="#">MENU2</a>
-                <ul id="sub-menu">
-                    <li><a href="#">submenu</a></li>
-                    <li><a href="#">submenu</a></li>
-                    <li><a href="#">submenu</a></li>
-                    <li><a href="#">submenu</a></li>
-                </ul>
-            </li>
-            <li><a href="#">MENU3</a></li>
-            <li><a href="#">MENU4</a></li>
-        </ul>
+        <h1>Pure css drop down menu</h1>
+        <!-- nav 이용해서 다른 페이지에서도 떠있게 만들 수 있음 -->
+        <nav role="navigation">
+            <ul id="main-menu">
+                <li><a href="#">MENU1</a></li>
+                <li><a href="#">MENU2</a>
+                    <ul id="sub-menu">
+                        <li><a href="#" aria-label="sub-menu">submenu</a></li>
+                        <li><a href="#" aria-label="sub-menu">submenu</a></li>
+                        <li><a href="#" aria-label="sub-menu">submenu</a></li>
+                        <li><a href="#" aria-label="sub-menu">submenu</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">MENU3</a>
+                    <ul id="sub-menu">
+                        <li><a href="#" aria-label="sub-menu">submenu</a></li>
+                        <li><a href="#" aria-label="sub-menu">submenu</a></li>
+                        <li><a href="#" aria-label="sub-menu">submenu</a></li>
+                        <li><a href="#" aria-label="sub-menu">submenu</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">MENU4</a></li>
+                <li><a href="#">MENU5</a></li>
+                <li><a href="#">MENU6</a></li>
+            </ul>
+        </nav>
     </body>
 </html>
