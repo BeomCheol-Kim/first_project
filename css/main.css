@@ -8,33 +8,20 @@ body{
 }
 
 #container{
-    height:250px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#NameOne{
+#Name{
     color: black;
+    font-family: 'Nanum Pen Script', 'Roboto', serif;
+    font-size: 5em;
+    text-decoration-line : none;
+    text-decoration-color: none;
+}
+
+#Name:hover{
     opacity: 50%;
-    font-family: 'Nanum Pen Script', 'Roboto', serif;
-    font-size: 5em;
-    text-decoration-line : none;
-    text-decoration-color: none;
-}
-
-#NameTwo{
-    color: black;
-    font-family: 'Nanum Pen Script', 'Roboto', serif;
-    font-size: 5em;
-    text-decoration-line : none;
-    text-decoration-color: none;
-}
-
-#NameThree{
-    color: black;
-    font-family: 'Nanum Pen Script', 'Roboto', serif;
-    font-size: 5em;
-    text-decoration-line : none;
-    text-decoration-color: none;
+    transition: all 0.4s ease-out;
 }
