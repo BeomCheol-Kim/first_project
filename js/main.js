@@ -12,20 +12,24 @@ function resizeApply(){
 
 function nameTouchOn(objs, n){
     var j;
+    var explain = document.querySelectorAll(".explanation");
     for (j = 0; j < objs.length; j++){
         if (j != n){
-            objs[j].style.opacity = 50 + "%";
+            objs[j].style.opacity = 20 + "%";
         }
     }
+    explain[n].style.opacity = 100 + "%";
 }
 
 function nameTouchOff(objs, n){
     var j;
+    var explain = document.querySelectorAll(".explanation");
     for (j = 0; j < objs.length; j++){
         if (j != n){
             objs[j].style.opacity = 100 + "%";
         }
     }
+    explain[n].style.opacity = 0 + "%";
 }
 
 window.onload = function(){
@@ -39,7 +43,7 @@ window.onload = function(){
 var i;
 var k;
 var temp;
-var names = document.querySelectorAll("#Name");
+var names = document.querySelectorAll(".Name");
 for (i = 0; i < names.length; i++){
     temp = i;
     names[i].addEventListener("mouseover", function(){
